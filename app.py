@@ -34,6 +34,10 @@ def register():
 def success():
     return render_template(('success.html'))
 
+@app.route('/form')
+def form():
+    return render_template('ind.html')
+
 if __name__ == '__main__':
     app.run(debug = True)
 
